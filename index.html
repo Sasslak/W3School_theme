@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3School</title>
+    <link href="assets/img/favicon.png" rel="shortcut icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.responsive.css">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav class="menu">
+            <div class="menu_right">
+                <a href="#" class="menu_logo"><img src="assets/img/logo-dark.png" alt="Machic"
+                        class="menu_logo-img"></a>
+                <div class="menu_links">
+                    <a href="#" class="menu_links-link menu_links-link1">آموزش ها<i
+                            class="menu_links-linkicon fa-solid fa-caret-down"></i></a>
+                    <a href="#" class="menu_links-link menu_links-link2">تمرین ها<i
+                            class="fa-solid fa-caret-down"></i></a>
+                    <a href="#" class="menu_links-link menu_links-link3">گواهینامه ها<i
+                            class="fa-solid fa-caret-down"></i></a>
+                    <a href="#" class="menu_links-link menu_links-link4">خدمات<i class="fa-solid fa-caret-down"></i></a>
+                    <form class="form" method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF"]); ?>
+                        <div class="form-up">
+                            <input name="name" class="input-name" placeholder="جستجو..." id="name" autocomplete="off"
+                                required></input>
+                            <button class="btn-sumbit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                    <span class="icon-form"><i class="fa fa-search"></i></span>
+                    <form class="form-resp" method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF"]); ?>
+                        <div class="resp_form-up">
+                            <input name="name" class="resp_input-name" placeholder="جستجو..." id="name"
+                                autocomplete="off" required></input>
+                            <button class="resp_btn-sumbit" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="menu_left">
+                <div class="menuleft_links">
+                    <a href="setgoal" class="menuleft_links-link">هدف گذاری</a>
+                    <a href="spaces" class="menuleft_links-link menuleft_links-link2">فضاها</a>
+                    <a href="getcertified" class="menuleft_links-link menuleft_links-link3">گرفتن گواهینامه</a>
+                    <a href="my" class="menuleft_links-link">اکانت من</a>
+                </div>
+            </div>
+        </nav>
+        <div class="submenu_links">
+            <div class="submenu_link submenu_link1">
+                <div class="submenu_link-div">
+                    <div class="submenu_link-header">
+                        <p class="submenu_title">آموزش ها</p>
+                        <div class="menu_links-icon menu_links-icon1">
+                            <i class="fa fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="submenu_link-flex">
+                        <div class="col1">
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                        </div>
+                        <div class="col2">
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                        </div>
+                        <div class="col3">
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="submenu_links">
+            <div class="submenu_link submenu_link2">
+                <div class="submenu_link-div">
+                    <div class="submenu_link-header">
+                        <p class="submenu_title">تمرین ها</p>
+                        <div class="menu_links-icon menu_links-icon2">
+                            <i class="fa fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="submenu_link-flex">
+                        <div class="col1">
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                        </div>
+                        <div class="col2">
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                        </div>
+                        <div class="col3">
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="submenu_links">
+            <div class="submenu_link submenu_link3">
+                <div class="submenu_link-div">
+                    <div class="submenu_link-header">
+                        <p class="submenu_title">گواهینامه ها</p>
+                        <div class="menu_links-icon menu_links-icon3">
+                            <i class="fa fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="submenu_link-flex">
+                        <div class="col1">
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                        </div>
+                        <div class="col2">
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                        </div>
+                        <div class="col3">
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="submenu_links">
+            <div class="submenu_link submenu_link4">
+                <div class="submenu_link-div">
+                    <div class="submenu_link-header">
+                        <p class="submenu_title">خدمات</p>
+                        <div class="menu_links-icon menu_links-icon4">
+                            <i class="fa fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="submenu_link-flex">
+                        <div class="col1">
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                        </div>
+                        <div class="col2">
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                        </div>
+                        <div class="col3">
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                            <p class="submenu_subtitle">HTML و CSS</p>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>HTML</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>CSS</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>BootStrap</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>FlexBox</a>
+                            <a href="#" class="submenu_link-url"><span>یادگیری</span>Grid</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <nav class="navbar" id="navbar">
+            <a href="html" class="navbar_links-link">HTML</a>
+            <a href="html" class="navbar_links-link">CSS</a>
+            <a href="html" class="navbar_links-link">JS</a>
+            <a href="html" class="navbar_links-link">BOOTSTRAP</a>
+            <a href="html" class="navbar_links-link">++C</a>
+            <a href="html" class="navbar_links-link">PYTHON</a>
+            <a href="html" class="navbar_links-link">RUBY</a>
+            <a href="html" class="navbar_links-link">HTML</a>
+            <a href="html" class="navbar_links-link">CSS</a>
+            <a href="html" class="navbar_links-link">JS</a>
+            <a href="html" class="navbar_links-link">BOOTSTRAP</a>
+            <a href="html" class="navbar_links-link">++C</a>
+            <a href="html" class="navbar_links-link">PYTHON</a>
+            <a href="html" class="navbar_links-link">RUBY</a>
+            <a href="html" class="navbar_links-link">HTML</a>
+            <a href="html" class="navbar_links-link">CSS</a>
+            <a href="html" class="navbar_links-link">JS</a>
+            <a href="html" class="navbar_links-link">BOOTSTRAP</a>
+            <a href="html" class="navbar_links-link">++C</a>
+            <a href="html" class="navbar_links-link">PYTHON</a>
+            <a href="html" class="navbar_links-link">RUBY</a>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main class="main">
+        <!-- Content -->
+        <section class="content">
+            <p class="title_web">یادگیری کدنویسی</p>
+            <p class="subtitle_web">با بزرگترین وبسایت توسعه دهندگان در جهان</p>
+            <form class="content_form" method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF"]); ?>
+                <div class="content_form-up">
+                    <input name="name" class="content_input-name" placeholder="جستجو..." id="name" autocomplete="off"
+                        required></input>
+                    <button class="content_btn-sumbit" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+            <a href="#" class="link_web">مطمئن نیستی از کجا شروع کنی؟</a>
+        </section>
+        <svg style="background-color:#D9EEE1;" width="100%" height="70" viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+        </svg>
+        <!-- Lang -->
+        <section class="lang langhtml">
+            <div class="cont">
+                <div class="part">
+                    <div class="rightpart">
+                        <p class="title_lang">HTML</p>
+                        <p class="subtitle_lang">یک زبان برای ساختن صفحات وب</p>
+                        <a href="#" class="btnlang fs">یادگیری HTML</a>
+                        <a href="#" class="btnlang sc">ویدئوی آموزشی</a>
+                        <a href="#" class="btnlang th">ارجاعات HTML</a>
+                        <a href="#" class="btnlang fr">گرفتن گواهینامه</a>
+                    </div>
+                    <div class="leftpart">
+                        <p class="title_code" dir="ltr">HTML:</p>
+                        <div class="code">
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor"
+                                    style="color:red"> html</span><span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span><br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span
+                                    class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span>HTML Tutorial<span class="tagnamecolor"
+                                style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>/title<span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                                style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span><br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span><br><br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span>This is a heading<span
+                                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span><br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span>This is a paragraph.<span
+                                class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span><br><br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span><br>
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                    style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                                    style="color:mediumblue">&gt;</span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="lang langcss">
+            <div class="cont">
+                <div class="part">
+                    <div class="rightpart">
+                        <p class="title_lang">CSS</p>
+                        <p class="subtitle_lang">زبانی برای استایل دهی به صفحات وب</p>
+                        <a href="#" class="btnlang fs">یادگیری CSS</a>
+                        <a href="#" class="btnlang th">ارجاعات CSS</a>
+                        <a href="#" class="btnlang fr">گرفتن گواهینامه</a>
+                    </div>
+                    <div class="leftpart">
+                        <p class="title_code" dir="ltr">CSS:</p>
+                        <div class="code">
+                            <span class="cssselectorcolor" style="color:brown">
+                                body <span class="cssdelimitercolor" style="color:black">{</span><span
+                                    class="csspropertycolor" style="color:red"><br>
+                                    &nbsp; background-color<span class="csspropertyvaluecolor"
+                                        style="color:mediumblue"><span class="cssdelimitercolor"
+                                            style="color:black">:</span> lightblue<span class="cssdelimitercolor"
+                                            style="color:black">;</span></span><br></span><span
+                                    class="cssdelimitercolor" style="color:black">}</span><br><br>
+                                h1 <span class="cssdelimitercolor" style="color:black">{</span><span
+                                    class="csspropertycolor" style="color:red"><br>
+                                    &nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                            class="cssdelimitercolor" style="color:black">:</span> white<span
+                                            class="cssdelimitercolor" style="color:black">;</span></span><br>
+                                    &nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                            class="cssdelimitercolor" style="color:black">:</span> center<span
+                                            class="cssdelimitercolor"
+                                            style="color:black">;</span></span><br></span><span
+                                    class="cssdelimitercolor" style="color:black">}</span><br><br>p <span
+                                    class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                                    style="color:red"><br>&nbsp; font-family<span class="csspropertyvaluecolor"
+                                        style="color:mediumblue"><span class="cssdelimitercolor"
+                                            style="color:black">:</span> verdana<span class="cssdelimitercolor"
+                                            style="color:black">;</span></span><br></span><span
+                                    class="cssdelimitercolor" style="color:black">}</span> </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="lang langjs">
+            <div class="cont">
+                <div class="part">
+                    <div class="rightpart">
+                        <p class="title_lang" style="color: #fff;">JavaScript</p>
+                        <p class="subtitle_lang" style="color: #fff;">زبانی برای برنامه نویسی صفحات وب</p>
+                        <a href="#" class="btnlang fs">یادگیری JavaScript</a>
+                        <a href="#" class="btnlang th">ارجاعات JavaScript</a>
+                        <a href="#" class="btnlang fr">گرفتن گواهینامه</a>
+                    </div>
+                    <div class="leftpart">
+                        <p class="title_code" dir="ltr">CSS:</p>
+                        <div class="code">
+                            <span class="cssselectorcolor" style="color:brown">
+                                body <span class="cssdelimitercolor" style="color:black">{</span><span
+                                    class="csspropertycolor" style="color:red"><br>
+                                    &nbsp; background-color<span class="csspropertyvaluecolor"
+                                        style="color:mediumblue"><span class="cssdelimitercolor"
+                                            style="color:black">:</span> lightblue<span class="cssdelimitercolor"
+                                            style="color:black">;</span></span><br></span><span
+                                    class="cssdelimitercolor" style="color:black">}</span><br><br>
+                                h1 <span class="cssdelimitercolor" style="color:black">{</span><span
+                                    class="csspropertycolor" style="color:red"><br>
+                                    &nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                            class="cssdelimitercolor" style="color:black">:</span> white<span
+                                            class="cssdelimitercolor" style="color:black">;</span></span><br>
+                                    &nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                            class="cssdelimitercolor" style="color:black">:</span> center<span
+                                            class="cssdelimitercolor"
+                                            style="color:black">;</span></span><br></span><span
+                                    class="cssdelimitercolor" style="color:black">}</span><br><br>p <span
+                                    class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                                    style="color:red"><br>&nbsp; font-family<span class="csspropertyvaluecolor"
+                                        style="color:mediumblue"><span class="cssdelimitercolor"
+                                            style="color:black">:</span> verdana<span class="cssdelimitercolor"
+                                            style="color:black">;</span></span><br></span><span
+                                    class="cssdelimitercolor" style="color:black">}</span> </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <script src="assets/js/js.js"></script>
+</body>
+
+</html>
