@@ -1,4 +1,4 @@
-
+/* Fonts */
 
 @font-face {
     font-family: 'Shabnam';
@@ -36,8 +36,7 @@ section {
     padding: 120px 0;
 }
 
-.cont {
-}
+.cont {}
 
 /* Header */
 
@@ -127,7 +126,8 @@ section {
 
 .col1,
 .col2,
-.col3 {
+.col3,
+.col4 {
     display: flex;
     flex-direction: column;
 }
@@ -417,7 +417,7 @@ section {
 /* Langs */
 
 .lang {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .part {
@@ -435,14 +435,14 @@ section {
     justify-content: center;
     align-items: center;
     font-family: "Shabnam";
-    width: 600px;
+    width: 575px;
 }
 
 .leftpart {
     background-color: #38444d;
     padding: 20px 20px 30px 20px;
     border-radius: 7px;
-    width: 440px;
+    width: 510px;
 }
 
 .title_lang {
@@ -456,7 +456,11 @@ section {
     margin-bottom: 10px !important;
     font-size: 20px;
     color: #140b15;
+    font-family: "Shabnam";
+    
 }
+
+/* Btn */
 
 .btnlang {
     display: flex;
@@ -471,6 +475,7 @@ section {
     color: #fff;
     border-radius: 25px;
     transition: all 0.2s;
+    font-family: "Shabnam";
 }
 
 .fs {
@@ -517,16 +522,23 @@ section {
 }
 
 .code {
-    line-height: 1.5;
+    line-height: 1.7;
     background-color: rgb(21, 32, 43);
     padding: 25px;
     margin: auto;
     text-align: left;
     color: #fff;
-    font-size: 17px;
+    font-size: 16px;
     border-radius: 7px;
     font-family: Consolas, Menlo, "courier new", monospace;
     direction: ltr;
+}
+
+/* HTML */
+
+.langhtml {
+    background-color: #D9EEE1 !important;
+    margin-top: -6px;
 }
 
 .tagnamecolor {
@@ -547,10 +559,7 @@ section {
         !important;
 }
 
-.langhtml {
-    background-color: #D9EEE1 !important;
-    margin-top: -6px;
-}
+/* CSS */
 
 .langcss {
     background-color: var(--color2) !important;
@@ -579,7 +588,188 @@ section {
         !important;
 }
 
+/* JS */
+
 .langjs {
-    background-color: rgb(13,23,33)!important;
+    background-color: rgb(13, 23, 33) !important;
     margin-top: -6px;
+}
+
+.tagnamecolor {
+    color: #ff9999
+        /*red*/
+        !important;
+}
+
+.tagcolor {
+    color: #88ccbb
+        /*green2*/
+        !important
+}
+
+.jskeywordcolor {
+    color: #c5a5c5
+        /*purple*/
+        !important;
+}
+
+.jspropertycolor {
+    color: white !important;
+}
+
+.jscolor {
+    color: white !important;
+}
+
+.jsstringcolor {
+    color: #88c999
+        /*green*/
+        !important;
+}
+
+.jsnumbercolor {
+    color: #80b6ff
+        /*blue*/
+        !important
+}
+
+.attributevaluecolor {
+    color: #88c999
+        /*green*/
+        !important;
+}
+
+/* lang_down */
+
+.lang_down {
+    background-color: rgb(13,23,33)!important;
+}
+
+.part_max {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 0;
+    width: 1280px;
+    padding: 20px;
+}
+
+.part_max-right, .part_max-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    padding: 24px;
+    width: 575px;
+    border-radius: 4px;
+    line-height: 1.5;
+}
+
+.part_max-right,.part_symbol-right   {
+    background-color: #FFF4A3;
+}
+
+.part_max-left,.part_symbol-left  {
+    background-color: #FFC0C7;
+}
+
+.title_lang-down {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.lang_symbol {
+    padding: 0 0 70px 0;
+}
+
+.part_symbol-right,.part_symbol-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    width: 575px;
+    border-radius: 4px;
+    line-height: 1.5;
+}
+
+.title_lang-symbol {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.partlink {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+.partlink-small {
+    width: 240px !important;
+}
+
+/* Footer */
+
+.footer {
+    background-image: url(../img/lynx_landing.png),url("../img/bg_sky_darker.gif");
+    background-repeat: no-repeat, repeat;
+    background-position: left bottom, center center /*left top*/;
+    padding: 60px 0;
+    height: 600px;
+}
+
+.menu_footer {
+    width: 1280px;
+    margin: 0 auto 0;
+}
+
+.menufooter_links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menufooter_links-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 11px 12px;
+    margin: 0 10px;
+    font-family: "Shabnam";
+}
+
+.menufooter_links-link:hover {
+    transition: all 0.1s;
+    color: var(--color2);
+}
+
+
+.contents_footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Shabnam";
+    gap: 200px;
+}
+
+.submenufooter_subtitle {
+    margin: 40px 0 20px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.submenufooter_link-url {
+    color: #fff;
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.submenufooter_link-url:hover {
+    color: var(--color2);
 }
