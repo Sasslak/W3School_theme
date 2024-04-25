@@ -1,5 +1,4 @@
 # W3School Theme
----
 # Tools and Skills using : 
 <div style="display: inline-block">
   <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/HTML.svg" width="50" hight="50" title="HMTL">
