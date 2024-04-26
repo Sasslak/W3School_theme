@@ -82,7 +82,15 @@ section {
     justify-content: flex-start;
 }
 
-.menu_links-link {
+.menu_formobile {
+    display: none;
+}
+
+.menu_link-base {
+    display: none;
+}
+
+.menu_links-link,.menu_link-base {
     font-size: 18px;
     font-weight: 500;
     transition: all 0.3s;
@@ -90,7 +98,7 @@ section {
     padding: 20px 20px;
 }
 
-.menu_links-link i {
+.menu_links-link i,.menu_link-base i {
     margin-right: 8px;
 }
 
@@ -105,11 +113,12 @@ section {
 
 .submenu_link-div {
     display: flex;
-    width: 900px;
+    max-width: 900px;
+    min-width: 500px;
     margin: 0 auto 0;
     flex-direction: column;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 60px 30px;
 }
 
 .submenu_link-header {
@@ -192,7 +201,7 @@ section {
     transition: all 0.1s;
 }
 
-.menu_links-link:hover {
+.menu_links-link:hover ,.menu_link-base:hover{
     background-color: var(--color1) !important;
     transition: all 0.3s;
 }
@@ -372,7 +381,6 @@ section {
 }
 
 .content_form {
-    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -387,7 +395,7 @@ section {
     align-items: center;
     overflow: hidden;
     margin-bottom: 35px;
-    width: 23%;
+    width: 380px;
     border: 1px solid rgba(0, 0, 0, 0.25) !important;
     outline: none;
 }
@@ -425,7 +433,7 @@ section {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto 0;
-    width: 1040px;
+    width: 920px;
     padding: 0 20px;
 }
 
@@ -435,14 +443,14 @@ section {
     justify-content: center;
     align-items: center;
     font-family: "Shabnam";
-    width: 575px;
+    width: 470px;
 }
 
 .leftpart {
     background-color: #38444d;
     padding: 20px 20px 30px 20px;
     border-radius: 7px;
-    width: 510px;
+    width: 450px;
 }
 
 .title_lang {
@@ -650,7 +658,8 @@ section {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto 0;
-    width: 1280px;
+    max-width: 1280px;
+    min-width: 975px;
     padding: 20px;
 }
 
@@ -661,7 +670,7 @@ section {
     align-items: center;
     color: #000;
     padding: 24px;
-    width: 575px;
+    width: 47%;
     border-radius: 4px;
     line-height: 1.5;
 }
@@ -690,7 +699,7 @@ section {
     justify-content: center;
     align-items: center;
     color: #000;
-    width: 575px;
+    width: 47%;
     border-radius: 4px;
     line-height: 1.5;
 }
@@ -704,12 +713,12 @@ section {
 .partlink {
     width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: 40px;
     text-align: center;
 }
 
 .partlink-small {
-    width: 240px !important;
+    width: 20.5% !important;
 }
 
 /* Footer */
@@ -719,12 +728,14 @@ section {
     background-repeat: no-repeat, repeat;
     background-position: left bottom, center center /*left top*/;
     padding: 60px 0;
-    height: 600px;
+    height: 800px;
 }
 
 .menu_footer {
-    width: 1280px;
+    max-width: 1280px;
+    min-width: 975px;
     margin: 0 auto 0;
+    padding: 0 30px;
 }
 
 .menufooter_links {
@@ -739,8 +750,7 @@ section {
     font-size: 18px;
     font-weight: 500;
     color: #fff;
-    padding: 11px 12px;
-    margin: 0 10px;
+    margin: 0 20px;
     font-family: "Shabnam";
 }
 
@@ -755,7 +765,7 @@ section {
     justify-content: flex-start;
     align-items: center;
     font-family: "Shabnam";
-    gap: 200px;
+    gap: 15%;
 }
 
 .submenufooter_subtitle {
@@ -773,3 +783,4 @@ section {
 .submenufooter_link-url:hover {
     color: var(--color2);
 }
+

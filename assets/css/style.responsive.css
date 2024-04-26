@@ -20,6 +20,7 @@
     .menu_links-link3 {
         display: none;
     }
+
     .menuleft_links-link3 {
         display: block;
     }
@@ -32,9 +33,76 @@
     }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 990px) {
     .content {
         background-image: none, url(../img/background_in_space.gif);
+    }
+
+    .menufooter_logo {
+        margin: 0 !important;
+    }
+
+    .rightpart,
+    .leftpart,
+    .part_max-right,
+    .part_max-left,
+    .part_symbol-right,
+    .part_symbol-left {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .partlink-small {
+        width: 45% !important;
+    }
+
+    .part,
+    .part_max,
+    .part_max-down {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .part_max {
+        padding: 0 20px;
+        min-width: 100%;
+    }
+
+    .footer {
+        background-position: center bottom, center center;
+        height: 2350px;
+    }
+
+    .menu_footer {
+        min-width: 100%;
+    }
+
+    .menufooter_links {
+        flex-direction: column;
+        justify-content: center;
+        line-height: 3;
+
+    }
+
+    .menufooter_links-link {
+        font-size: 22px;
+    }
+
+    .contents_footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .submenufooter_subtitle {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .submenufooter_link-url {
+        text-align: center;
+        font-size: 16px;
+        margin: 5px 0;
     }
 }
 
@@ -50,11 +118,32 @@
     .icon-form {
         display: block;
     }
+
+
 }
 
 @media screen and (min-width: 780px) {
     .form-resp {
         display: none !important;
+    }
+
+    .icon-form {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .menu_link-base {
+        display: block;
+    }
+    .menu_links-link {
+        display: none;
+    }
+    .menu_formobile {
+        display: block;
+    }
+    .form {
+        display: block;
     }
 
     .icon-form {
