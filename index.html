@@ -308,25 +308,6 @@
     </main>
     <footer id="footer"></footer>
     <script src="assets/js/js.js"></script>
-    <script>
-        (function () {
-            let header = document.getElementById('header');
-            var header_xhttp = new XMLHttpRequest();
-            header_xhttp.onreadystatechange = function () {
-                header.innerHTML = this.responseText;
-            }
-            header_xhttp.open('GET', 'header.html', true);
-            header_xhttp.send()
-
-            let footer = document.getElementById('footer');
-            var footer_xhttp = new XMLHttpRequest();
-            footer_xhttp.onreadystatechange = function () {
-                footer.innerHTML = this.responseText;
-            }
-            footer_xhttp.open('GET', 'footer.html', true);
-            footer_xhttp.send()
-        })()
-    </script>
 </body>
 
 </html>

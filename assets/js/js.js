@@ -1,4 +1,20 @@
+(function () {
+    let header = document.getElementById('header');
+    var header_xhttp = new XMLHttpRequest();
+    header_xhttp.onreadystatechange = function () {
+        header.innerHTML = this.responseText;
+    }
+    header_xhttp.open('GET', 'http://localhost/projects/web/w3school_theme/header.html', true);
+    header_xhttp.send()
 
+    let footer = document.getElementById('footer');
+    var footer_xhttp = new XMLHttpRequest();
+    footer_xhttp.onreadystatechange = function () {
+        footer.innerHTML = this.responseText;
+    }
+    footer_xhttp.open('GET', 'http://localhost/projects/web/w3school_theme/footer.html', true);
+    footer_xhttp.send()
+})()
 // Humberger Menu
 
 let form = document.querySelector(".form-resp")
@@ -14,6 +30,7 @@ formBtn.addEventListener("click", function () {
         formBtnIcon.classList = "fa fa-search"
     }
 })
+
 
 
 let menu11 = document.querySelector(".submenu_link1")
@@ -187,5 +204,4 @@ menuBtnIcon24.addEventListener("click", function () {
         menuBtnLink14.style.background = "#282A35"
     }
 })
-
 
